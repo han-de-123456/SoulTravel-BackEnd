@@ -1,0 +1,26 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: soulUser
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        group: DEFAULT_GROUP
+        namespace: soultravel
+      config:
+        enable: true
+        server-addr: 127.0.0.1:8848
+        namespace: soultravel
+        file-extension: yaml
+        username: nacos
+        password: nacos
+        shared-configs:
+          - data-id: travel-mysql.yml
+            group: travel-mysql
+            refresh: true
+          - data-id: travel-mybatis-plus.yml
+            group: travel-mybatis-plus
+            refresh: true
+        auto-refresh: true
