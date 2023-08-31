@@ -38,6 +38,12 @@ public class User  implements Serializable {
     @TableField("user_name")
     private String userName;
 
+    /**
+     * 年龄
+     */
+    @TableField("age")
+    private String age;
+
     public String getId() {
         return id;
     }
@@ -52,5 +58,13 @@ public class User  implements Serializable {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
     }
 }
