@@ -1,13 +1,14 @@
 package org.soul.model;
 
-import com.baomidou.mybatisplus.annotation.*;
-
-import java.io.Serializable;
-
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
 
 /**
  * <p>
@@ -22,7 +23,7 @@ import lombok.NoArgsConstructor;
 @TableName("user")
 @AllArgsConstructor
 @NoArgsConstructor
-public class User  implements Serializable {
+public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
